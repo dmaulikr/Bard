@@ -13,6 +13,9 @@
 		5F3E767B1B4B3AEE00CA5B38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E767A1B4B3AEE00CA5B38 /* Images.xcassets */; };
 		5F3E767E1B4B3AEE00CA5B38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E767C1B4B3AEE00CA5B38 /* LaunchScreen.xib */; };
 		5F3E768A1B4B3AEE00CA5B38 /* ContainingAppForBardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E76891B4B3AEE00CA5B38 /* ContainingAppForBardTests.swift */; };
+		5F3E769C1B4B3AFB00CA5B38 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E769B1B4B3AFB00CA5B38 /* KeyboardViewController.swift */; };
+		5F3E769F1B4B3AFB00CA5B38 /* Bard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F3E76971B4B3AFB00CA5B38 /* Bard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F3E76A51B4B405100CA5B38 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E76A41B4B405100CA5B38 /* KeyboardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +26,28 @@
 			remoteGlobalIDString = 5F3E766D1B4B3AEE00CA5B38;
 			remoteInfo = ContainingAppForBard;
 		};
+		5F3E769D1B4B3AFB00CA5B38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F3E76661B4B3AEE00CA5B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3E76961B4B3AFB00CA5B38;
+			remoteInfo = Bard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F3E76A31B4B3AFB00CA5B38 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F3E769F1B4B3AFB00CA5B38 /* Bard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5F3E766E1B4B3AEE00CA5B38 /* ContainingAppForBard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContainingAppForBard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +60,10 @@
 		5F3E76831B4B3AEE00CA5B38 /* ContainingAppForBardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContainingAppForBardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3E76881B4B3AEE00CA5B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F3E76891B4B3AEE00CA5B38 /* ContainingAppForBardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainingAppForBardTests.swift; sourceTree = "<group>"; };
+		5F3E76971B4B3AFB00CA5B38 /* Bard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Bard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F3E769A1B4B3AFB00CA5B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F3E769B1B4B3AFB00CA5B38 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		5F3E76A41B4B405100CA5B38 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +81,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F3E76941B4B3AFB00CA5B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +96,7 @@
 			children = (
 				5F3E76701B4B3AEE00CA5B38 /* ContainingAppForBard */,
 				5F3E76861B4B3AEE00CA5B38 /* ContainingAppForBardTests */,
+				5F3E76981B4B3AFB00CA5B38 /* Bard */,
 				5F3E766F1B4B3AEE00CA5B38 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +106,7 @@
 			children = (
 				5F3E766E1B4B3AEE00CA5B38 /* ContainingAppForBard.app */,
 				5F3E76831B4B3AEE00CA5B38 /* ContainingAppForBardTests.xctest */,
+				5F3E76971B4B3AFB00CA5B38 /* Bard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +149,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5F3E76981B4B3AFB00CA5B38 /* Bard */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E769B1B4B3AFB00CA5B38 /* KeyboardViewController.swift */,
+				5F3E76A41B4B405100CA5B38 /* KeyboardView.xib */,
+				5F3E76991B4B3AFB00CA5B38 /* Supporting Files */,
+			);
+			path = Bard;
+			sourceTree = "<group>";
+		};
+		5F3E76991B4B3AFB00CA5B38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E769A1B4B3AFB00CA5B38 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +177,12 @@
 				5F3E766A1B4B3AEE00CA5B38 /* Sources */,
 				5F3E766B1B4B3AEE00CA5B38 /* Frameworks */,
 				5F3E766C1B4B3AEE00CA5B38 /* Resources */,
+				5F3E76A31B4B3AFB00CA5B38 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5F3E769E1B4B3AFB00CA5B38 /* PBXTargetDependency */,
 			);
 			name = ContainingAppForBard;
 			productName = ContainingAppForBard;
@@ -150,6 +207,23 @@
 			productReference = 5F3E76831B4B3AEE00CA5B38 /* ContainingAppForBardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5F3E76961B4B3AFB00CA5B38 /* Bard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F3E76A01B4B3AFB00CA5B38 /* Build configuration list for PBXNativeTarget "Bard" */;
+			buildPhases = (
+				5F3E76931B4B3AFB00CA5B38 /* Sources */,
+				5F3E76941B4B3AFB00CA5B38 /* Frameworks */,
+				5F3E76951B4B3AFB00CA5B38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bard;
+			productName = Bard;
+			productReference = 5F3E76971B4B3AFB00CA5B38 /* Bard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +239,9 @@
 					5F3E76821B4B3AEE00CA5B38 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 5F3E766D1B4B3AEE00CA5B38;
+					};
+					5F3E76961B4B3AFB00CA5B38 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -183,6 +260,7 @@
 			targets = (
 				5F3E766D1B4B3AEE00CA5B38 /* ContainingAppForBard */,
 				5F3E76821B4B3AEE00CA5B38 /* ContainingAppForBardTests */,
+				5F3E76961B4B3AFB00CA5B38 /* Bard */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +280,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F3E76951B4B3AFB00CA5B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3E76A51B4B405100CA5B38 /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +311,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5F3E76931B4B3AFB00CA5B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F3E769C1B4B3AFB00CA5B38 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +326,11 @@
 			isa = PBXTargetDependency;
 			target = 5F3E766D1B4B3AEE00CA5B38 /* ContainingAppForBard */;
 			targetProxy = 5F3E76841B4B3AEE00CA5B38 /* PBXContainerItemProxy */;
+		};
+		5F3E769E1B4B3AFB00CA5B38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F3E76961B4B3AFB00CA5B38 /* Bard */;
+			targetProxy = 5F3E769D1B4B3AFB00CA5B38 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -390,6 +489,30 @@
 			};
 			name = Release;
 		};
+		5F3E76A11B4B3AFB00CA5B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Bard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5F3E76A21B4B3AFB00CA5B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Bard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +538,14 @@
 			buildConfigurations = (
 				5F3E76911B4B3AEE00CA5B38 /* Debug */,
 				5F3E76921B4B3AEE00CA5B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F3E76A01B4B3AFB00CA5B38 /* Build configuration list for PBXNativeTarget "Bard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F3E76A11B4B3AFB00CA5B38 /* Debug */,
+				5F3E76A21B4B3AFB00CA5B38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
